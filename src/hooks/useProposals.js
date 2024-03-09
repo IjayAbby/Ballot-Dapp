@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getProposalsContract } from "../constants/contract";
+import { getProposalsContract } from "../constants/contracts";
 import { readOnlyProvider } from "../constants/providers";
 import { decodeBytes32String } from "ethers";
 

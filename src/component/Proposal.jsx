@@ -1,9 +1,11 @@
 import { Avatar, Box, Card, Flex, Text } from "@radix-ui/themes";
+import useHandleVote from "../hooks/useHandleVote";
 
-const Proposal = ({ id, name, voteCount, handleVote }) => {
+const Proposal = ({ id, name, voteCount }) => {
+    const handleVote = useHandleVote(id)
     return (
         <Card size="2" style={{ width: 425 }}>
-            <Flex gap="" align="center">
+            <Flex gap="4" align="center">
                 <Avatar size="4" radius="full" fallback={id} color="indigo" />
                 <Box width={"100%"}>
                     <Flex justify={"between"} align={"center"}>
